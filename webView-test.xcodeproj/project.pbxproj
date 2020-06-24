@@ -16,6 +16,7 @@
 		846668A024A0E0C600725BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466689E24A0E0C600725BF3 /* LaunchScreen.storyboard */; };
 		846668AB24A0E0C700725BF3 /* webView_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846668AA24A0E0C700725BF3 /* webView_testTests.swift */; };
 		846668B624A0E0C700725BF3 /* webView_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846668B524A0E0C700725BF3 /* webView_testUITests.swift */; };
+		846668C524A0E0D600725BF3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846668C424A0E0D600725BF3 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		846668B124A0E0C700725BF3 /* webView-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "webView-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846668B524A0E0C700725BF3 /* webView_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webView_testUITests.swift; sourceTree = "<group>"; };
 		846668B724A0E0C700725BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846668C424A0E0D600725BF3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846668C524A0E0D600725BF3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				846668A924A0E0C700725BF3 /* webView-testTests */,
 				846668B424A0E0C700725BF3 /* webView-testUITests */,
 				8466688E24A0E0C500725BF3 /* Products */,
+				846668C324A0E0D600725BF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 				846668B724A0E0C700725BF3 /* Info.plist */,
 			);
 			path = "webView-testUITests";
+			sourceTree = "<group>";
+		};
+		846668C324A0E0D600725BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				846668C424A0E0D600725BF3 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

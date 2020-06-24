@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import WebKit
+class ViewController: UIViewController, WKNavigationDelegate {
 
-class ViewController: UIViewController {
-
+    var webView: WKWebView!
+    
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let stringURL = "https://natann4755.github.io/WebVeiw/"
+        let url = URL(string: stringURL)!
+        webView.load(URLRequest(url: url))
+        webView.allowsBackForwardNavigationGestures = true
+        view = webView
+
     }
 
 
-}
 
+
+
+
+
+}
